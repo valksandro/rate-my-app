@@ -37,7 +37,7 @@ class MinimumDaysCondition extends DebuggableCondition {
   final int remindDays;
 
   /// The minimum date required to meet this condition.
-  DateTime minimumDate = DateTime.now();
+  DateTime minimumDate = DateTime.now().add(const Duration(days: -1, hours: -1));
 
   /// Creates a new minimum days condition instance.
   MinimumDaysCondition({
